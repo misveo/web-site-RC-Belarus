@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* убрали у документа все отступы, указываем браузеру учитывать все границы элементов*/
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway';
+	scroll-behavior: smooth;
+}
+
+/* ШАПКА */
+header {
+	display: flex;
+	justify-content: center;
+	/* position: absolute; */
+	width: 100%;
+	height: 100px;
+	/* overflow: hidden; */
+	background-color: #fff;
+	z-index: -1;
+	/* border: 1px solid #fff; */
+}
+
+header nav {
+	/* position: absolute; */
+	/* margin-top: 20px; */
+	width: 100%;
+	/* height: 100px; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between; 
+	padding: 0px 80px;
+	z-index: 1;
+	background: #fff;
+	box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
+	/* border: 1px solid #000; */
+}
+
+header nav .menu_ul ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	
+	/* border: 1px solid #fff; */
+}
+header nav .menu_ul ul li {
+	padding: 8px 16px;
+
+	/* border: 1px solid #000; */
+}
+header nav .menu_ul ul li:hover {
+	background: #7194CC;
+	transition: .3s linear;
+	border-radius: 0 8px;
+}
+header nav .menu_ul ul li a {
+	text-decoration: none;
+	color: #2F3637;
+	font-size: 16px;
+	font-style: Medium;
+	font-family: Raleway;
+  font-weight: 500;
+}
+header nav .menu_ul ul li a:hover {
+	color: #fff;
+}
+header nav .soc-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 4px 10px;
+	/* background: rgba(200, 210, 209, 0.32); */
+	border-radius: 60px;
+
+	/* border: 1px solid #000; */
+}
+header nav .soc-icons a{
+	text-decoration: none;
+	color: #7194CC;
+	font-size: 20px;
+}
+header nav .soc-icons a:hover {
+	color: #2F3637;
+	opacity: 1;
+	transition: .3s linear;
+}
+
+h1 {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 38px;
+	text-transform: uppercase;
+	color: #2F3637;
+	text-align: center;
+	margin-top: 80px;
+}
+
+p{
+	font-family: 'Lusitana';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 165%;
+	color: #414A4C;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.inside_content{
+	display: flex;
+	position: relative;
+	margin: 60px auto;
+	z-index: -1;
+}
+
+
+/* ПОДВАЛ */
+footer{
+	display: flex;
+	/* flex-direction: column; */
+	position: absolute;
+	width: 100%;
+	height: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	/* margin-top: 1776px; */
+	/* align-items: center; */
+	/* justify-content: center; */
+	gap: 30px;
+	padding: 0px 80px;
+background: #171A1A;
+
+/* border: 1px solid #fff; */
+}
+
+footer .footer1{
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0px;
+	width: 360px;
+	height: 315px;
+
+	/* border: 1px solid #fff; */
+}
+footer .footer1 img{
+	width: 220px;
+	height: 60px;
+	margin-bottom: 40px;
+
+	/* border: 1px solid #fff; */
+}
+footer .footer1 h2{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+
+	/* border: 1px solid #fff; */
+}
+footer .footer1 p{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 160%;
+	color: #C8D2D1;
+	margin-bottom: 16px;
+	text-align: left;
+
+	/* border: 1px solid #fff; */
+}
+footer .footer1 .documents{
+	display: grid;
+	grid-template-columns: 163px 163px;
+	gap: 10px;
+	margin-bottom: 40px;
+
+	/* border: 1px solid #fff; */
+}
+footer .footer1 .documents a{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+	letter-spacing: 0.08em;
+
+	text-decoration: underline;
+	color: #C8D2D1;
+
+	/* border: 1px solid #fff; */
+}
+footer .footer1 .documents a:hover{
+	color: #fff;
+	border: 1px solid #fff;
+	text-decoration: none;
+	transition: .3s linear;
+}
+
+/* ______________ */
+footer .footer2{
+	display: flex;
+	flex-direction: column;
+	margin: 140px 0px;
+	width: 360px;
+	height: 315px;
+	gap: 20px;
+
+	/* border: 1px solid #fff; */
+}
+
+footer .footer2 h2{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 23px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+footer .footer2 hr{
+	width: 35px;
+	padding: 3px;
+	border-radius: 0px 8px;
+	background: #FFF334;
+	border: none;
+}
+
+footer .footer_ul{
+	list-style: none;
+}
+
+footer .footer_ul li {
+	padding: 10px 0px;
+}
+
+footer .footer_ul li a {
+	text-decoration: none;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	color: #C8D2D1;
+}
+
+footer .footer_ul li a:hover {
+text-decoration: underline;
+color: #FFF334;
+transition: .3s linear;
+}
+
+/* _______ */
+footer .footer3{
+	display: flex;
+	flex-direction: column;
+	margin: 140px 0px;
+	width: 360px;
+	height: 315px;
+	gap: 20px;
+
+	/* border: 1px solid #fff; */
+}
+
+footer .footer3 h2{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 23px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+footer .footer3 hr{
+	width: 35px;
+	padding: 3px;
+	border-radius: 0px 8px;
+	background: #FFF334;
+	border: none;
+}
+footer .footer3 p{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 170%;
+	color: #C8D2D1;
+	text-align: left;
+
+	/* border: 1px solid #fff; */
+}
+
+footer .footer3 .footer_soc_icons{
+	margin-top: 12px;
+	display: flex;
+	gap: 20px;
+}
+footer .footer3 .footer_soc_icons a{
+	padding: 12px;
+	/* margin-right: 24px; */
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid rgba(200, 210, 209, 0.32);
+	border-radius: 0px 8px;
+	
+}
+
+footer .footer3 .footer_soc_icons a:hover{
+	background: #7194CC;
+}
+
+.footer3 .button_top{
+	text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+	background: #7194CC;
+	border-radius: 0px 8px;
+
+	width: 50px;
+	padding: 10px 0px;
+
+	text-align: center;
+	vertical-align: auto;
+
+	margin-left: 215px;
+}
+.footer3 .button_top:hover{
+background: none;
+border-radius: 0px 8px;
+border: 1px solid #7194CC;
+transition: .3s linear;
+}
